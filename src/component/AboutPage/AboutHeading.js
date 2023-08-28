@@ -1,6 +1,6 @@
 import React from "react";
 import AboutHeadingImg from "../../assets/images/aboutHeading.jpg";
-import MainButton from "../button/button";
+// import MainButton from "../button/button";
 
 function AboutHeading() {
   return (

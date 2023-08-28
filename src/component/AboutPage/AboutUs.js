@@ -1,5 +1,4 @@
 import React from "react";
-import imageURL from "../../assets/images/aboutLandscape.jpg";
 import landscapeImage from "../../assets/images/aboutLandscape.jpg";
 import portaitImage from "../../assets/images/aboutPotrait2.jpg";
 

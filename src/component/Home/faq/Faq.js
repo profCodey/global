@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+
 import './faq.css'
 import FaqProp from '../../faq/faq'
 

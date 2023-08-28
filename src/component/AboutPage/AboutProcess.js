@@ -27,9 +27,6 @@ function AboutProcess() {
     "Throughout the engagement, we execute the security plan with precision. After the event or venue operations, we review the effectiveness of the plan and make adjustments as needed.";
 
   const isSmallDevice = window.innerWidth <= 480;
-  let smallDevices = {
-    backgroundImage: `url(${processlong})`,
-  };
 
   let containerStyle = {
     backgroundImage: `url(${isSmallDevice ? processlong : proccesswide})`,

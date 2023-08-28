@@ -3,14 +3,7 @@ import React from 'react'
 
 import proccesswide from "../../assets/images/contact3.jpg";
 import processlong from "../../assets/images/contact6.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBuilding,
-  faPeopleGroup,
-  faUserGroup,
-  faFaceSmile,
-} from "@fortawesome/free-solid-svg-icons";
-import MainButton from "../button/button";
+
 
 
 function ContactHeader() {
