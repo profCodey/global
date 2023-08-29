@@ -1,33 +1,23 @@
 import React, {useRef} from "react";
 import "./quote.css";
 import sendEmail from "../../../email";
+import MainButton from '../../button/button'
 
 function Quote2() {
    const form = useRef();
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [phone, setPhone] = useState('');
-  // const [location, setLocation] = useState('');
-  // const [enquiry, setEnquiry] = useState('');
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // const templateParams = {
-    //   name,
-    //   email,
-    //   phone,
-    //   location,
-    //   enquiry
-    // };
-// console.log(templateParams);
- 
     
     try {
       await sendEmail(form.current);
       alert("Message sent successfully");
+      console.log('message sent');
     }catch(err){
       alert("Message failed to send");
+      console.log("message failed to send")
       console.log('erorr', err);
     }
     
@@ -44,8 +34,8 @@ function Quote2() {
             <input
               type="text"
               name="user_name"
-              // value={name}
-              // onChange={(e) => setName(e.target.value)}
+              className="text-2xl p-4 md:p-6"
+      
             />
           </div>
           <div>
@@ -54,8 +44,8 @@ function Quote2() {
             <input
               type="email"
               name="user_email"
-              // value={email}
-              // onChange={(e) => setEmail(e.target.value)}
+              className="text-2xl p-4 md:p-6"
+         
             />
           </div>
           <div>
@@ -64,8 +54,8 @@ function Quote2() {
             <input
               type="tel"
               name="user_phone"
-              // value={phone}
-              // onChange={(e) => setPhone(e.target.value)}
+              className="text-2xl p-4 md:p-6"
+   
             />
           </div>
           <div>
@@ -74,8 +64,8 @@ function Quote2() {
             <input
               type="text"
               name="location"
-              // value={location}
-              // onChange={(e) => setLocation(e.target.value)}
+              className="text-2xl p-4 md:p-6"
+        
             />
           </div>
           <div className="quoteEnquiry">
@@ -83,11 +73,14 @@ function Quote2() {
             <br />
             <textarea
               name="message"
-              // value={enquiry}
-              // onChange={(e) => setEnquiry(e.target.value)}
+              className="text-2xl p-4 md:p-6"
+
             />
           </div>
-          <button type="submit">Submit</button>
+
+          <div className="mx-auto w-full flex justify-center">
+            <MainButton text="Submit" submit="submit" />
+          </div>
         </form>
       </div>
     </div>

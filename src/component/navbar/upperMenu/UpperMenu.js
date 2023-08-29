@@ -40,7 +40,7 @@ function UpperMenu() {
               </div>
               <div>
                 <FontAwesomeIcon className="icons" icon={faEnvelope} />
-                info@gmail.com
+                info@globaltotalsecurity.com
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ function UpperMenu() {
 
       {handleHamburger && (
         <div className="mobileMenu">
-          <div className="mobileNav" onClick={()=>setHandleHamburger(false)}>
+          <div className="mobileNav" onClick={() => setHandleHamburger(false)}>
             <LowerMenu />
           </div>
           <div className="mobileSocial">

@@ -1,8 +1,27 @@
 import React from "react";
 import Socials from "../socials/socials";
 import MainButton from "../button/button";
+import { useRef } from 'react'
+import sendEmail from "../../email";
 
 function ContactMain() {
+  const form = useRef();
+  
+   const handleSubmit = async (e) => {
+     e.preventDefault();
+
+     try {
+       await sendEmail(form.current);
+       alert("Message sent successfully");
+       console.log("message sent");
+     } catch (err) {
+       alert("Message failed to send");
+       console.log("message failed to send");
+       console.log("erorr", err);
+     }
+   };
+
+  
   return (
     <div className="container flex flex-col w-4/5 mx-auto pt-0 md:py-32 lg:flex-row gap-32 lg:gap-32 mb-8">
       <div className="lg:w-1/2">
@@ -12,8 +31,8 @@ function ContactMain() {
         <p className=" text-2xl mt-2 lg:text-2xl lg:w-full lg:leading-relaxed">
           Thank you for your interest in Global Total Security Limited. If you
           have any questions, inquiries, or would like to request a quote for
-          our door supervisory services, we would love to hear from you. Here are the
-          ways you can get in touch with us:
+          our door supervisory services, we would love to hear from you. Here
+          are the ways you can get in touch with us:
         </p>
 
         <div className="md:grid md:grid-cols-2 justify-between ">
@@ -39,7 +58,7 @@ function ContactMain() {
               Our Email
             </h2>
             <p className=" text-2xl mt-2 lg:text-2xl lg:w-full lg:leading-relaxed">
-              info@gmail.com
+              info@globaltotalsecurity.com
             </p>
           </div>
           <div>
@@ -54,7 +73,7 @@ function ContactMain() {
       </div>
 
       <div className="lg:w-1/2">
-        <form action="" className="">
+        <form ref={form} onSubmit={handleSubmit}>
           <h2 className="lg:hidden text-3xl text-[#001f41] w-3/4 mx-auto text-center md:text-5xl lg:text-6xl mb-10">
             Get in Touch with Us
           </h2>
@@ -65,6 +84,7 @@ function ContactMain() {
                 style={{ border: "1px solid #ff9d2f" }}
                 type="text"
                 placeholder="First Name"
+                name="user_name"
               />
             </div>
             <div className="">
@@ -73,6 +93,7 @@ function ContactMain() {
                 style={{ border: "1px solid #ff9d2f" }}
                 type="text"
                 placeholder="Last Name"
+                name="lastName"
               />
             </div>
             <div className="">
@@ -81,6 +102,7 @@ function ContactMain() {
                 style={{ border: "1px solid #ff9d2f" }}
                 type="email"
                 placeholder="Email"
+                name="user_email"
               />
             </div>
             <div className="">
@@ -89,6 +111,7 @@ function ContactMain() {
                 type="phone"
                 style={{ border: "1px solid #ff9d2f" }}
                 placeholder="Phone"
+                name="user_phone"
               />
             </div>
           </div>
@@ -98,6 +121,7 @@ function ContactMain() {
               type="text"
               style={{ border: "1px solid #ff9d2f" }}
               placeholder="Message"
+              name="message"
             />
           </div>
           <div className="mt-8">
@@ -108,6 +132,7 @@ function ContactMain() {
               borderRadius="0px"
               backgroundColor="var(--color-primary)"
               color="white"
+              submit="submit"
             />
           </div>
         </form>

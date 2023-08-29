@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function MainButton({
   text,
+  submit,
   width = "150px",
   height = "45px",
   fontSize = "20px",
@@ -30,9 +31,19 @@ function MainButton({
   }
 
   return (
-    <Link to={link}>
-      <button style={buttonStyle}>{text}</button>
-    </Link>
+    <>
+      {submit === 'submit' ? (
+        <button style={buttonStyle} type="submit">
+          {text}
+        </button>
+      ) : (
+        <Link to={link}>
+          <button style={buttonStyle} type="submit">
+            {text}
+          </button>
+        </Link>
+      )}
+    </>
   );
 }
 

@@ -13,8 +13,8 @@ function Jobs() {
 
         <div className="w-4/5 md:grid md:grid-cols-3 mx-auto gap-x-8 lg:gap-x-32 mt-8 md:mt-16 ">
           <div>
-                      <Job
-                          id= {1}
+            <Job
+              id={1}
               field="Security"
               title="Door Supervisors"
               location="3-9 Hyde Road 
@@ -25,7 +25,7 @@ United Kingdom "
           </div>
           <div>
             <Job
-            id= {2}
+              id={2}
               field="Designer"
               title="Junior UI/UX Designer"
               location="3-9 Hyde Road 
@@ -35,8 +35,8 @@ United Kingdom "
             />
           </div>
           <div>
-                    <Job
-                  id = {3}
+            <Job
+              id={3}
               field="Managing"
               title="Account Manager"
               location="3-9 Hyde Road 
@@ -47,13 +47,13 @@ United Kingdom "
           </div>
         </div>
         <div className="w-3/4 mx-auto">
-            <p className=" md:w-1/2 text-center font-thin text-3xl text-[#001f41] mx-auto lg:mt-10 md:text-3xl lg:text-4xl mb-16 mt-16">
-              We are always looking for talented people -send us your resume and cover letter, we
-              will get in touch with you.
-            </p>
-            <p className=" md:w-1/2 text-center font-thin text-3xl text-[#001f41] mx-auto lg:mt-10 md:text-3xl lg:text-4xl mb-32 mt-16">
-              email -info@gmail.com
-            </p>
+          <p className=" md:w-1/2 text-center font-thin text-3xl text-[#001f41] mx-auto lg:mt-10 md:text-3xl lg:text-4xl mb-16 mt-16">
+            We are always looking for talented people -send us your resume and
+            cover letter, we will get in touch with you.
+          </p>
+          <p className=" md:w-1/2 text-center font-thin text-3xl text-[#001f41] mx-auto lg:mt-10 md:text-3xl lg:text-4xl mb-32 mt-16">
+            email -info@globaltotalsecurity.com
+          </p>
         </div>
       </div>
     </>
