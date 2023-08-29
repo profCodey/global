@@ -6,6 +6,7 @@ import {
   faSquareInstagram,
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import WhatsAppButton from "../../whatsapp";
 
 function Socials({
   fontSize = "2rem",
@@ -24,6 +25,9 @@ function Socials({
       <FontAwesomeIcon icon={faSquareFacebook} style={socialIcon} />
       <FontAwesomeIcon icon={faSquareXTwitter} style={socialIcon} />
       <FontAwesomeIcon icon={faSquareInstagram} style={socialIcon} />
+      <span className="ml-0 -mt-2 md: lg:-ml-3 lg:-mt-2">
+        <WhatsAppButton style={{}} fontSize={fontSize} />
+      </span>
     </div>
   );
 }

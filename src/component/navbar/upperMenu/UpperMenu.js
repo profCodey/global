@@ -15,6 +15,7 @@ import {
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import WhatsAppButton from "../../../whatsapp";
 
 function UpperMenu() {
   const [handleHamburger, setHandleHamburger] = useState(false);
@@ -54,6 +55,10 @@ function UpperMenu() {
             <Link to="https:/instagram.com">
               <FontAwesomeIcon icon={faInstagram} className="icons" />
             </Link>
+            <span className="ml-0 -mt-2 md: lg:ml-1 lg:mt-0">
+              <WhatsAppButton />
+            </span>
+ 
           </div>
         </div>
 

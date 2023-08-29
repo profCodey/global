@@ -13,6 +13,7 @@ import {
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import WhatsAppButton from "../../whatsapp";
 
 function Footer() {
   return (
@@ -114,8 +115,9 @@ function Footer() {
               <FontAwesomeIcon icon={faInstagram} className="icons" />
             </Link>
             <Link to="https:/youtube.com">
-              <FontAwesomeIcon icon={faYoutube} className="icons" />
+              <FontAwesomeIcon icon={faYoutube} className="icons"  />
             </Link>
+            <WhatsAppButton />
           </div>
         </div>
       </div>

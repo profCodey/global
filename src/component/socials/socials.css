@@ -2,9 +2,27 @@
   /* color: #B02525; */
   color: var(--color-secondary);
   font-size: 2rem;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
 }
 
 /* color-secondary */
+
+/* WhatsAppButton.css */
+
+/* Adjustments for small screens (max-width: 767px) */
+@media (max-width: 500px) {
+  .whatsappAdjust {
+    margin-left: 1px;
+    margin-top: -4px;
+  }
+}
+
+/* Adjustments for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .whatsappAdjust {
+    margin-left: -5px;
+    margin-top: -5px;
+  }
+}
