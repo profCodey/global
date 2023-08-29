@@ -41,7 +41,7 @@ function UpperMenu() {
               </div>
               <div>
                 <FontAwesomeIcon className="icons" icon={faEnvelope} />
-                info@globaltotalsecurity.com
+                info@globaltotalsecurity.co.uk
               </div>
             </div>
           </div>

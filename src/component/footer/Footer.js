@@ -101,7 +101,7 @@ function Footer() {
           <div className="flex gap-6 items-center mx-auto md:mx-0">
             <FontAwesomeIcon className="icons" icon={faEnvelope} />
             <p className="text-xl md:text-2xl">
-              info@globaltotalsecurity.com
+              info@globaltotalsecurity.co.uk
             </p>
           </div>
           <div className="flex flex-row mt-6 gap-4 mx-auto md:mx-0">

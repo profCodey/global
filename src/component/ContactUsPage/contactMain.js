@@ -58,7 +58,7 @@ function ContactMain() {
               Our Email
             </h2>
             <p className=" text-2xl mt-2 lg:text-2xl lg:w-full lg:leading-relaxed">
-              info@globaltotalsecurity.com
+              info@globaltotalsecurity.co.uk
             </p>
           </div>
           <div>

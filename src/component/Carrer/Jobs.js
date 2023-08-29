@@ -52,7 +52,7 @@ United Kingdom "
             cover letter, we will get in touch with you.
           </p>
           <p className=" md:w-1/2 text-center font-thin text-3xl text-[#001f41] mx-auto lg:mt-10 md:text-3xl lg:text-4xl mb-32 mt-16">
-            email -info@globaltotalsecurity.com
+            email -info@globaltotalsecurity.co.uk
           </p>
         </div>
       </div>
