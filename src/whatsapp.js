@@ -9,7 +9,7 @@ import {
 
 
 const WhatsAppButton = ({
-  phoneNumber = "+447862038656",
+  phoneNumber = ["+447862038656", "+447899011270"],
   message = "Hello, I would like to make an enquiry.",
   style,
   fontSize,
