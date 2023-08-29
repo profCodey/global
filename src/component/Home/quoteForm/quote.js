@@ -1,39 +1,51 @@
-import React, {useState} from "react";
+import React, {useRef} from "react";
 import "./quote.css";
+import sendEmail from "../../../email";
 
 function Quote2() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [location, setLocation] = useState('');
-  const [enquiry, setEnquiry] = useState('');
+   const form = useRef();
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [phone, setPhone] = useState('');
+  // const [location, setLocation] = useState('');
+  // const [enquiry, setEnquiry] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      name,
-      email,
-      phone,
-      location,
-      enquiry
-    };
+    // const templateParams = {
+    //   name,
+    //   email,
+    //   phone,
+    //   location,
+    //   enquiry
+    // };
+// console.log(templateParams);
+ 
     
-    console.log(templateParams);
+    try {
+      await sendEmail(form.current);
+      alert("Message sent successfully");
+    }catch(err){
+      alert("Message failed to send");
+      console.log('erorr', err);
+    }
+    
   };
 
     
   return (
     <div className="quoteForm2">
       <div className="quoteFormWrapper">
-        <form action="" onSubmit={handleSubmit} className="quoteformchild">
+        <form ref={form} onSubmit={handleSubmit} className="quoteformchild">
           <h2>Get a Quote</h2>
           <div>
             <label>Name:</label> <br />
             <input
               type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              name="user_name"
+              // value={name}
+              // onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div>
@@ -41,8 +53,9 @@ function Quote2() {
             <br />
             <input
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              name="user_email"
+              // value={email}
+              // onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div>
@@ -50,8 +63,9 @@ function Quote2() {
             <br />
             <input
               type="tel"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              name="user_phone"
+              // value={phone}
+              // onChange={(e) => setPhone(e.target.value)}
             />
           </div>
           <div>
@@ -59,16 +73,18 @@ function Quote2() {
             <br />
             <input
               type="text"
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
+              name="location"
+              // value={location}
+              // onChange={(e) => setLocation(e.target.value)}
             />
           </div>
           <div className="quoteEnquiry">
             <label>Enquiry:</label>
             <br />
             <textarea
-              value={enquiry}
-              onChange={(e) => setEnquiry(e.target.value)}
+              name="message"
+              // value={enquiry}
+              // onChange={(e) => setEnquiry(e.target.value)}
             />
           </div>
           <button type="submit">Submit</button>
