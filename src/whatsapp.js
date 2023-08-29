@@ -9,11 +9,11 @@ import {
 
 
 const WhatsAppButton = ({
-  phoneNumber = "+2348145574715",
+  phoneNumber = "+447862038656",
   message = "Hello, I would like to make an enquiry.",
-    style,
-    fontSize,
-   color = "var(--color-secondary)",
+  style,
+  fontSize,
+  color = "var(--color-secondary)",
 }) => {
   //   const handleClick = () => {
   //     const url = `https://wa.me/${phoneNumber}?text=${message}`;
@@ -31,13 +31,16 @@ const WhatsAppButton = ({
     }
   };
 
-
   return (
     <Link to="" onClick={handleClick}>
       {style ? (
-              <FontAwesomeIcon icon={faSquareWhatsapp} className="icons" style={{fontSize}} />
+        <FontAwesomeIcon
+          icon={faSquareWhatsapp}
+          className="icons"
+          style={{ fontSize }}
+        />
       ) : (
-                  <FontAwesomeIcon icon={faWhatsapp} className="icons"   />
+        <FontAwesomeIcon icon={faWhatsapp} className="icons" />
       )}
     </Link>
   );

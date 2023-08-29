@@ -79,7 +79,7 @@ function Footer() {
             </div>
             <div className="md:w-11/12">
               <p className="text-xl md:text-2xl">
-                01 616 690 880, <br /> +44 7862038656, <br /> +44 7404 749549,{" "}
+                01 616 690 880, <br /> +44 7862038656, <br /> +44 7548 450129,{" "}
                 <br /> +44 7878 251590
               </p>
             </div>
@@ -115,7 +115,7 @@ function Footer() {
               <FontAwesomeIcon icon={faInstagram} className="icons" />
             </Link>
             <Link to="https:/youtube.com">
-              <FontAwesomeIcon icon={faYoutube} className="icons"  />
+              <FontAwesomeIcon icon={faYoutube} className="icons" />
             </Link>
             <WhatsAppButton />
           </div>
