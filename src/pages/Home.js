@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 
 function Homepage() {
   <Helmet>
-    <title>Global Total Security Limited</title>
+    <title>Global Total Security Limited | Event Security</title>
     <meta
       name="description"
       content="Top Door Security Services un UK | Event Security Serives in UK | CCTV Services in UK"
