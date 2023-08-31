@@ -7,18 +7,27 @@ import {
   faSquareWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-
 const WhatsAppButton = ({
-  phoneNumber = ["+447862038656", "+447899011270"],
+
   message = "Hello, I would like to make an enquiry.",
   style,
   fontSize,
   color = "var(--color-secondary)",
 }) => {
+  const WhatsAppNumbers = [
+    // "+447862038656",
+    // "+447878251590",
+    // "+447899999999",
+    // "+2348145574715",
+    "+2348112431513",
+    "+447899011270"
+  ];
   //   const handleClick = () => {
   //     const url = `https://wa.me/${phoneNumber}?text=${message}`;
   //     window.location.href = url;
   //   };
+
+const phoneNumber = WhatsAppNumbers[Math.floor(Math.random() * WhatsAppNumbers.length)];
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
