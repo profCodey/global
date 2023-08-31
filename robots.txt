@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://globaltotalsecurity.co.uk/sitemap.xml
