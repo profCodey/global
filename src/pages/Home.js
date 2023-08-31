@@ -6,8 +6,17 @@ import AboutUs from "../component/Home/AboutUs/AboutUs";
 import Services from "../component/Home/OurServices/OurServices";
 import Faq from "../component/Home/faq/Faq";
 import Achievement from "../component/Home/achievement/achievement";
+import { Helmet } from "react-helmet-async";
 
 function Homepage() {
+  <Helmet>
+    <title>Global Total Security Limited</title>
+    <meta
+      name="description"
+      content="Top Door Security Services un UK | Event Security Serives in UK | CCTV Services in UK"
+    />
+    <link rel="canonical" href="/" />
+  </Helmet>;
   return (
     <div>
       <Header />
