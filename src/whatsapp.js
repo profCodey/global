@@ -15,12 +15,13 @@ const WhatsAppButton = ({
   color = "var(--color-secondary)",
 }) => {
   const WhatsAppNumbers = [
+    "+447862038656",
     // "+447862038656",
     // "+447878251590",
     // "+447899999999",
     // "+2348145574715",
-    "+2348112431513",
-    "+447899011270"
+    // "+2348112431513",
+    // "+447899011270"
   ];
   //   const handleClick = () => {
   //     const url = `https://wa.me/${phoneNumber}?text=${message}`;
