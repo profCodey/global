@@ -105,16 +105,16 @@ function Footer() {
             </p>
           </div>
           <div className="flex flex-row mt-6 gap-4 mx-auto md:mx-0">
-            <Link to="https:/facebook.com">
+            <Link to="https://facebook.com">
               <FontAwesomeIcon icon={faFacebook} className="icons" />
             </Link>
-            <Link to="https:/twitter.com">
+            <Link to="https://twitter.com">
               <FontAwesomeIcon icon={faXTwitter} className="icons" />
             </Link>
-            <Link to="https:/instagram.com">
+            <Link to="https://instagram.com">
               <FontAwesomeIcon icon={faInstagram} className="icons" />
             </Link>
-            <Link to="https:/youtube.com">
+            <Link to="https://youtube.com">
               <FontAwesomeIcon icon={faYoutube} className="icons" />
             </Link>
             <WhatsAppButton />
