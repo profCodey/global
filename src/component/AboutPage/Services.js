@@ -1,10 +1,11 @@
 import React from "react";
 import ServicesImage from "../Services";
-import service1 from "../../assets/images/service1.jpg";
+// import service1 from "../../assets/images/service1.jpg";
 import crowdControl from "../../assets/images/crowdControl2.jpg";
 import eventSecurity from "../../assets/images/eventSecurity.jpg";
 import cctv2 from "../../assets/images/cctv2.jpg";
 import workshop from "../../assets/images/workshop.jpg";
+import retail from "../../assets/images/A.jpeg";
 import consultancy from "../../assets/images/consultancy.jpg";
 
 function OurServices() {
@@ -40,10 +41,10 @@ function OurServices() {
     <div className="container m-auto mt-24 md:mt-32 lg:mt-52 ">
       <div className=" md:grid grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto md:gap-x-20 ">
         <div className="">
-          <ServicesImage header={header1} text={text1} image={service1} />
+          <ServicesImage header={header1} text={text1} image={crowdControl} />
         </div>
         <div className="">
-          <ServicesImage header={header2} text={text2} image={crowdControl} />
+          <ServicesImage header={header2} text={text2} image={retail} />
         </div>
         <div className="">
           <ServicesImage header={header3} text={text3} image={eventSecurity} />
