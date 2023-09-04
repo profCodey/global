@@ -49,9 +49,9 @@ function UpperMenu() {
             <Link to="https:/facebook.com">
               <FontAwesomeIcon icon={faFacebook} className="icons" />
             </Link>
-            {/* <Link to="https:/twitter.com">
+            <Link to="https:/twitter.com">
               <FontAwesomeIcon icon={faXTwitter} className="icons" />
-            </Link> */}
+            </Link>
             <Link to="https:/instagram.com">
               <FontAwesomeIcon icon={faInstagram} className="icons" />
             </Link>
