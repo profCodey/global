@@ -80,7 +80,8 @@ function Footer() {
             <div className="md:w-11/12">
               <p className="text-xl md:text-2xl">
                 01 616 690 880, <br /> +44 7862038656, <br /> +44 7548 450129,{" "}
-                <br /> +44 7878 251590
+                <br /> +44 7878 251590,
+                <br /> +44 7404 034322
               </p>
             </div>
           </div>

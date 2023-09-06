@@ -50,7 +50,7 @@ function ContactMain() {
             </h2>
             <p className=" text-2xl mt-2 lg:text-2xl lg:w-full lg:leading-relaxed">
               01 616 690 880, +44 7862038656 <br />
-              +44 7548 450129, +44 7878 251590
+              +44 7548 450129, +44 7878 251590, +44 7404 034322
             </p>
           </div>
           <div>
